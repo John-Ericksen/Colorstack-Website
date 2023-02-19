@@ -1,0 +1,109 @@
+
+:root 
+{
+  --twhite: rgb(255, 255, 255, .70);
+}
+
+html, body 
+{
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+}
+  
+
+.title_page
+{
+  display: flex;
+  background-color: var(--twhite);
+  color: black;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/group1.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  
+}
+
+.heading
+{
+  font-size: 150px;
+  margin: 0px;
+}
+
+.subheading
+{
+  font-size: 35px;
+  margin: 2px;
+}
+
+
+.mission_statement
+{
+  display: flex;
+  background-color: orange;
+  color: white;
+  height: 150vh;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.events
+{
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  color: white;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.eboard
+{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.learn_more
+{
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  color: black;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_points
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
