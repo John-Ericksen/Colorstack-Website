@@ -1,7 +1,23 @@
+@font-face {
+  font-family: gotham_book;
+  src: url(fnt/gotham-book-regular_no7IY/);
+}
+
+@font-face {
+  font-family: gotham_medium;
+  src: url(fnt/Gotham\ Medium.otf);
+}
+
+@font-face {
+  font-family: gotham_header;
+  src: url(fnt/Gotham\ Bold.otf);
+}
 
 :root 
 {
   --twhite: rgb(255, 255, 255, .70);
+  --tblack: rgb(0,0,0,.70);
+  --corange: #FCB432;
 }
 
 html, body 
@@ -32,25 +48,56 @@ html, body
 {
   font-size: 150px;
   margin: 0px;
+  font-family: "gothamHeader", Arial, Helvetica, sans-serif;
 }
 
 .subheading
 {
   font-size: 35px;
   margin: 2px;
+  font-family: "gothamMedium", Arial, Helvetica, sans-serif;
 }
 
 
 .mission_statement
 {
   display: flex;
-  background-color: orange;
+  background-color: var(--corange);
   color: white;
-  height: 150vh;
+  height: 160vh;
   justify-content: space-around;
-  align-items: center;
+  align-items: top;
   text-align: center;
+  text-align: start;
 }
+
+.text_box
+{
+  background-color:var(--tblack) ;
+  padding: 30px;
+  margin-top: 60vh;
+  height:fit-content;
+}
+
+.text_block
+{
+  font-family: "gothamBook", Arial, Helvetica, sans-serif ;
+  width: 45vw;
+  height: fit-content;
+  font-size: 32px;
+  text-align: start;
+  padding-top: 5vh;
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+#mission_photo
+{
+  width: 45vw;
+  height: 45.3vh;
+  margin-top: 60vh;
+}
+
 
 .events
 {
@@ -63,6 +110,7 @@ html, body
   align-items: center;
   text-align: center;
 }
+
 
 .eboard
 {
