@@ -1,7 +1,24 @@
+@font-face {
+  font-family: gotham_book;
+  src: url(fnt/Gotham\ Book\ Regular.otf);
+}
+
+@font-face {
+  font-family: gotham_medium;
+  src: url(fnt/Gotham\ Medium.otf);
+}
+
+@font-face {
+  font-family: gotham_header;
+  src: url(fnt/Gotham\ Bold.otf);
+}
 
 :root 
 {
   --twhite: rgb(255, 255, 255, .70);
+  --tblack: rgb(0,0,0,.30);
+  --corange: #FCB432;
+  --cgreen: #28706A
 }
 
 html, body 
@@ -10,8 +27,25 @@ html, body
   box-sizing: border-box;
   padding:0;
 }
-  
 
+button
+{
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  @media screen and (-ms-high-contrast: active) 
+  {
+    border: 2px solid currentcolor;
+  }
+}
+
+p, img
+{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
 .title_page
 {
   display: flex;
@@ -26,43 +60,93 @@ html, body
   background-size: cover;
   background-blend-mode: lighten;
   
+  
 }
 
 .heading
 {
   font-size: 150px;
   margin: 0px;
+  font-family: "gotham_header", Arial, Helvetica, sans-serif;
 }
 
 .subheading
 {
   font-size: 35px;
   margin: 2px;
+  font-family: "gotham_medium", Arial, Helvetica, sans-serif;
 }
 
 
 .mission_statement
 {
   display: flex;
-  background-color: orange;
+  background-color: var(--corange);
   color: white;
-  height: 150vh;
+  height: 160vh;
   justify-content: space-around;
-  align-items: center;
+  align-items: top;
   text-align: center;
+  text-align: start;
 }
+
+.text_box
+{
+  background-color:var(--tblack) ;
+  padding: 30px;
+  margin-top: 60vh;
+  height:fit-content;
+  width: 45vw;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.text_block
+{
+  font-family: "gotham_book", Arial, Helvetica, sans-serif ;
+ 
+  height: fit-content;
+  font-size: 32px;
+  text-align: start;
+  padding-top: 5vh;
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+#mission_photo
+{
+  width: 45vw;
+  height: 47vh;
+  margin-top: 60vh;
+}
+
 
 .events
 {
   display: flex;
   flex-direction: column;
-  background-color: green;
+  justify-content: space-around;
+  gap: 35vh;
+  background-color: var(--cgreen);
   color: white;
   height: 150vh;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "gotham_header", Arial, Helvetica, sans-serif;
 }
+
+#events_button
+{
+  width: 15vw;
+  height: 6vh;
+  font-size: 25px;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 5px;
+}
+
 
 .eboard
 {
