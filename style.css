@@ -83,11 +83,16 @@ p, img
   display: flex;
   background-color: var(--corange);
   color: white;
-  height: 160vh;
+  height: 200vh;
   justify-content: space-around;
   align-items: top;
   text-align: center;
   text-align: start;
+}
+
+#mission_heading
+{
+  font-size: 4vw;
 }
 
 .text_box
@@ -105,7 +110,7 @@ p, img
   font-family: "gotham_book", Arial, Helvetica, sans-serif ;
  
   height: fit-content;
-  font-size: 32px;
+  font-size: 1.5vw;
   text-align: start;
   padding-top: 5vh;
   max-height: 30vh;
@@ -115,7 +120,7 @@ p, img
 #mission_photo
 {
   width: 45vw;
-  height: 47vh;
+  height: 58vh;
   margin-top: 60vh;
 }
 
