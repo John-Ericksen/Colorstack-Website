@@ -130,7 +130,7 @@ p, img
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 35vh;
+  gap: 25vh;
   background-color: var(--cgreen);
   color: white;
   height: 150vh;
@@ -142,9 +142,10 @@ p, img
 
 #events_button
 {
-  width: 15vw;
-  height: 6vh;
-  font-size: 25px;
+  max-width: 250px;
+  width: 20vw;
+  height: 10vh;
+  font-size: 2.5vw;
   color: white;
   border-color: white;
   border-style: solid;
