@@ -37,7 +37,7 @@ button
   cursor: pointer;
   @media screen and (-ms-high-contrast: active) 
   {
-    border: 2px solid currentcolor;
+    border: .001vw solid currentcolor;
   }
 }
 
@@ -107,7 +107,7 @@ p, img
 
 .text_block
 {
-  font-family: "gotham_book", Arial, Helvetica, sans-serif ;
+  font-family: "gotham_book", Arial, Helvetica, sans-serif;
  
   height: fit-content;
   font-size: 1.5vw;
@@ -120,7 +120,7 @@ p, img
 #mission_photo
 {
   width: 45vw;
-  height: 58vh;
+  height: 57.5vh;
   margin-top: 60vh;
 }
 
@@ -140,10 +140,13 @@ p, img
   font-family: "gotham_header", Arial, Helvetica, sans-serif;
 }
 
-#events_button
+button
 {
+  font-family: "gotham_header", Arial, Helvetica, sans-serif;
   max-width: 250px;
   width: 20vw;
+  max-width: fit-content;
+  padding: 7px;
   height: 10vh;
   font-size: 2.5vw;
   color: white;
@@ -151,6 +154,11 @@ p, img
   border-style: solid;
   border-radius: 30px;
   border-width: 5px;
+}
+
+#eboard_button
+{
+  font-size: 1.5vw;
 }
 
 
@@ -164,6 +172,7 @@ p, img
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 25vh;
 }
 
 .learn_more
@@ -176,12 +185,31 @@ p, img
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 25vh;
+}
+
+#learn_more_heading
+{
+  font-size: 7vw;
 }
 
 .contact_points
 {
   display: flex;
   justify-content: space-around;
+  column-gap: 10vw;
+}
+
+.newsletter
+{
+  font-size: 2vw;
+  font-family: "gotham_book", Arial, Helvetica, sans-serif;
+  max-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  text-align: start;
 }
 
 .footer
