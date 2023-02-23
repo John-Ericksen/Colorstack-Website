@@ -212,6 +212,32 @@ button
   text-align: start;
 }
 
+.newstext
+{
+  margin-top: 0px;
+}
+
+.socials
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+
+.social_contacts
+{
+  font-family: "gotham_book", Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  gap: 2px;
+}
+
+#get_in_touch_heading
+{
+  font-size: 2vw;
+}
+
+
 .footer
 {
   display: flex;
