@@ -49,21 +49,41 @@ p, img
 .nav
 {
   background-color: rgb(0,0,0,0);
-  overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 2;
+  display: flex;
 }
 
-#nav_button
+.nav_button
 {
-  background: url("img/colorstack\ black.png");
-  width: 100px;
-  height: 100px;
-  
+  position: relative;
+  width: 4vw;
 }
 
+.nav_button img
+{
+  width: 100%;
+  height: auto;
+}
+
+.nav_button .btn 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav_button .btn:hover 
+{
+  background-color: black;
+}
 
   
 #title_page
