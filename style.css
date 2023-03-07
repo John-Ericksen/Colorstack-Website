@@ -45,8 +45,17 @@ p, img
 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+#nav_button
+{
+  background-image: url("img/colorstack\ black.png");
+  width: 20px;
+  height: 20px;
+}
+
+
   
-.title_page
+#title_page
 {
   display: flex;
   background-color: var(--twhite);
@@ -78,7 +87,7 @@ p, img
 }
 
 
-.mission_statement
+#mission_statement
 {
   display: flex;
   background-color: var(--corange);
@@ -125,7 +134,7 @@ p, img
 }
 
 
-.events
+#events
 {
   display: flex;
   flex-direction: column;
@@ -162,7 +171,7 @@ button
 }
 
 
-.eboard
+#eboard
 {
   display: flex;
   flex-direction: column;
@@ -175,7 +184,7 @@ button
   gap: 25vh;
 }
 
-.learn_more
+#learn_more
 {
   display: flex;
   flex-direction: column;
@@ -238,16 +247,31 @@ button
 }
 
 
-.footer
+#footer
 {
+  font-family: "gotham_header", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   background-color: white;
   color: black;
-  height: 6vh;
+  height: 7vh;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 1px;
 }
+
+.footer_heading
+{
+  font-size: 2vw;
+  margin: 0px;
+}
+
+.footer_subheading
+{
+  margin: 0px
+}
+
+
 
 
