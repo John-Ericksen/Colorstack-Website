@@ -58,6 +58,20 @@ a {
   text-decoration: inherit;
 }
 
+@keyframes view_enter 
+{
+	0% 
+  {
+		opacity: 0%;
+    transform: translate(0, -30px);
+	}
+	100% 
+  {
+		opacity: 100%;
+    transform: translate(0, 0px);
+	}
+}
+
 #title_page
 {
   display: flex;
@@ -71,6 +85,12 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
+}
+
+.title_text
+{
+  animation-name: view_enter;
+  animation-duration: .7s;
 }
 
 .heading
